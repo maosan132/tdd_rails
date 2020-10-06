@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'page to create a new player' do
-  it 'displays the correct file to create a enew player' do
+  it 'displays the correct file to create a new player' do
     visit root_path
 
     click_link('New Player')
