@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post 'players' => 'players#create'
   get 'players/:id' => 'players#show', as: 'player'
   get 'players/:id/edit' => 'players#edit', as: 'player_edit'
+  patch 'players/:id' => 'players#update'
 end

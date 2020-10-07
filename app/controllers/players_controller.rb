@@ -27,6 +27,17 @@ class PlayersController < ApplicationController
     @player = Player.find(params[:id])
   end
   
+  def update
+    player = Player.find(params[:id])
+      if player.update(player_params)
+        flash[:success] = "Object was successfully updated"
+        redirect_to :root
+      else
+        flash[:errors] = player.errors.full_messages
+        redirect_back(fallback_location:"/")
+      end
+  end
+  
   
   private
 
