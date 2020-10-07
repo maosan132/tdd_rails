@@ -22,6 +22,11 @@ class PlayersController < ApplicationController
       redirect_back(fallback_location:"/")  #update of redirect_to :back, not working on rails 5
     end
   end
+
+  def edit
+    @player = Player.find(params[:id])
+  end
+  
   
   private
 
