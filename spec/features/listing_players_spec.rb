@@ -8,10 +8,10 @@ RSpec.describe 'list players' do
     #visit '/'
     visit root_path
 
-    expect(page).to have_text('mauricio')
-    expect(page).to have_text('santos')
+    expect(page).to have_text('Mauricio')
+    expect(page).to have_text('Santos')
     expect(page).to have_text('Cris')
-    expect(page).to have_text('santos')
+    expect(page).to have_text('Santos')
 
     expect(page).to have_link('New Player')
   end
