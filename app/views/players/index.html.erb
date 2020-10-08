@@ -18,22 +18,13 @@
         <%= link_to  "Edit Profile", player_edit_path(p.id) %> |
 <%= link_to  "Delete Player", player_path(p.id), data: {method: :delete, confirm: 'r u sure?'} %>
 
-
-
-
-
-
-
-        
-        <%# link_to  "Delete profile", player_path(p.id), data: {method: :delete, confirm: 'r u sure?'} %>
       </td> 
 
     </tr>
     <% end %>
   </tbody>
 </table>
-<p>Eduardo Baik</p>
-<p>Cris Burns</p>
+<br>
 <!--<a href="">New Player</a>-->
 <!--<%= link_to  "New Player", '/players/new' %>-->
 <%= link_to  "New Player", players_new_path %>
