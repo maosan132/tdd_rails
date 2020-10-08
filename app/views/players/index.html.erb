@@ -16,6 +16,15 @@
       <td>
         <%= link_to  "Show Profile", player_path(p.id) %> |
         <%= link_to  "Edit Profile", player_edit_path(p.id) %> |
+<%= link_to  "Delete Player", player_path(p.id), data: {method: :delete, confirm: 'r u sure?'} %>
+
+
+
+
+
+
+
+        
         <%# link_to  "Delete profile", player_path(p.id), data: {method: :delete, confirm: 'r u sure?'} %>
       </td> 
 
