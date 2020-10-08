@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   # get '/' => 'players#index'
   root 'users#index'
 
-  resources :players
-  
+  resources :players  # replaces all 7 routes:
   #get 'players' => 'players#index'
   #get 'players/new' => 'players#new'
   #post 'players' => 'players#create'
@@ -13,4 +12,6 @@ Rails.application.routes.draw do
   #get 'players/:id/edit' => 'players#edit', as: 'player_edit'
   #patch 'players/:id' => 'players#update'
   #delete 'players/:id' => 'players#destroy'
+
+  resources :users, only: [:index, :create]  
 end
